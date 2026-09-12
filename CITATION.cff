@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the paper and identify the repository commit used."
+type: software
+title: "Explicit Andrews-Curtis constructions for divisibility subfamilies of square presentations"
+version: 0.1.0
+authors:
+  - family-names: Sneiderman
+    given-names: Robert
+    affiliation: Independent
+    email: robbysneiderman@gmail.com
+license: Apache-2.0
+keywords:
+  - Andrews-Curtis conjecture
+  - combinatorial group theory
+  - Lean 4
+  - explicit certificates
+preferred-citation:
+  type: report
+  title: "Explicit Andrews-Curtis constructions for divisibility subfamilies of square presentations"
+  authors:
+    - family-names: Sneiderman
+      given-names: Robert
+      affiliation: Independent
+      email: robbysneiderman@gmail.com
+  year: 2026
+  version: 0.1.0
+  notes: "GPT-6 Astra (OpenAI) is credited as an AI research collaborator; see the contribution statement."

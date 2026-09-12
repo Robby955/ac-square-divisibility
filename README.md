@@ -1,5 +1,11 @@
 # Explicit AC constructions for divisibility subfamilies
 
+**Robert Sneiderman — Independent**
+
+Contact: [robbysneiderman@gmail.com](mailto:robbysneiderman@gmail.com).
+
+With **GPT-6 Astra (OpenAI)**, AI research collaborator.
+
 This research note proves ordinary, fixed-rank Andrews–Curtis triviality for
 
 \[
@@ -11,7 +17,9 @@ G(2,s) with nonnegative s is covered. The quantified proof also includes two
 arithmetic root families for integer p and a nonnegative quotient.
 
 [Read the paper](paper/square-divisibility.pdf). Its source is
-[main.tex](paper/main.tex). The main proof consists of a fixed entry route,
+[main.tex](paper/main.tex). See [the release notes](RELEASE_NOTES.md),
+[citation metadata](CITATION.cff), and [contribution statement](CONTRIBUTIONS.md).
+The main proof consists of a fixed entry route,
 a recursive doubling witness and two explicit finishes. All substitutions
 restore the donor relator, and every basis transport includes its final
 ordinary AC correction.
@@ -38,6 +46,13 @@ replayed independently; this construction improves none of their lengths.
 See [the full receipt](receipts/replay.json) for paths, hashes, work, peak
 length and timings. These are construction measurements, not new challenge
 solves or shortestness claims.
+
+The proof contribution and discovery-track competition have separate purposes.
+The competitive archive must retain its shortest verified certificates.
+Paths generated for this paper are proof evidence; they do not replace a
+shorter certificate or count as a score improvement. Any candidate transferred
+to the scored campaign must first be replayed under that track's limits and
+compared with the controller's current best path.
 
 The finite CLI accepts p,s in 0..100 and quotient at most 8. The bound prevents
 accidental large exports from an exponential witness constructor. It does
@@ -92,6 +107,30 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
 The shipped PDF was compiled and its pages were visually inspected. The
 appendix contains every macro of the integer-parameter entry route.
 
+## Repository checks and release assets
+
+[The verification workflow](.github/workflows/verify.yml) builds Lean, checks
+source hashes and logical dependencies, runs the Python tests, replays the
+fixed matrix, and checks regeneration of the appendix table. Action revisions
+are pinned. This configuration has been reviewed locally; its first hosted
+run is pending publication of the repository. No passing CI badge is claimed.
+
+To prepare the files for a GitHub release from a clean committed version:
+
+```sh
+python3 prepare_release.py --output run/release
+```
+
+The command creates the PDF, a source archive, release notes, the full source
+commit, and SHA-256 checksums. It does not create a tag or publish anything.
+The release owner uploads these assets and records the same full commit in
+the SAIR proof contribution. No arXiv account is needed to link this PDF.
+
+The original code and repository documentation use [Apache 2.0](LICENSE).
+The paper uses [CC BY 4.0](paper/LICENSE). See [NOTICE.md](NOTICE.md) for
+third-party attribution. These are the prepared release terms; the controller
+retains the public release decision.
+
 ## Contribution and provenance
 
 [PRIOR_WORK.md](PRIOR_WORK.md) records the focused comparison and its limits.
@@ -113,8 +152,7 @@ in [lean/OFFICIAL-LICENSE](lean/OFFICIAL-LICENSE) and
 [official_verifier/LICENSE](official_verifier/LICENSE). The copied verifier
 core and canonicalization module are unchanged.
 
-Research and preparation used Codex and Fable assistance. The preserved Fable
-analysis supplied the quotient-two pinch interpretation and earlier p=±1
-connection to the published MS(1,w) result. The existing finite solved
-instances and baseline certificates retain their prior credit. Public release
-should retain these distinctions and the paper's references.
+Research used GPT-6 Astra through Codex and additional Fable assistance.
+[CONTRIBUTIONS.md](CONTRIBUTIONS.md) records their roles and the limits of the
+available historical model identification. Existing finite solved instances
+and baseline certificates retain their prior credit.
