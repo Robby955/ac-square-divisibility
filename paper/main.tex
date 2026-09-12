@@ -29,11 +29,14 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-For natural numbers $p,s$, we prove ordinary Andrews--Curtis triviality of
+Let $u,y$ be free generators. For natural numbers $p,s$, define the ordered
+pair of relator words
 \[
 G(p,s)=\bigl(u^2y^{-(2s+1)},\;uy^pu y^{-s}u^{-1}y^{-p}\bigr).
 \]
-The sufficient condition is $p\mid s$ or $p\mid(s+1)$; in particular,
+Setting both words equal to the identity defines the associated group
+presentation. We prove ordinary Andrews--Curtis triviality of this pair
+when $p\mid s$ or $p\mid(s+1)$; in particular,
 every $G(2,s)$ is covered. A uniform entry reaches a root-conjugacy pair.
 An iterated doubling identity then gives two arithmetic finishes, the second
 of which changes the root degree from $p$ to $p-1$.
@@ -47,7 +50,29 @@ problem are open.
 \end{abstract}
 
 \section{Statement and context}
-Work in the free group $F=F(u,y)$, with ordered pairs of relators. Write
+\paragraph{Definition of the square family.}
+Let $u,y$ be the generators of the free group $F(u,y)$.
+For integers $p,s$, define
+\[
+r_1(p,s)=u^2y^{-(2s+1)},\qquad
+r_2(p,s)=uy^pu y^{-s}u^{-1}y^{-p},
+\qquad G(p,s)=\bigl(r_1(p,s),r_2(p,s)\bigr).
+\]
+Here $G$ is our notation for this specified ordered pair of words.
+A relator is a word imposed to equal the identity; imposing $r_1=r_2=1$
+gives the presentation
+\[
+\langle u,y\mid u^2=y^{2s+1},\quad uy^pu=y^pu y^s\rangle.
+\]
+We call it the square family because the first relation contains $u^2$.
+The parameters $p,s$ index the family; they are not additional generators.
+For example, $G(2,1)$ has relations $u^2=y^3$ and $uy^2u=y^2uy$.
+The AC problem concerns the specified relator pair, so throughout this paper
+$G(p,s)$ retains those words and their order, rather than denoting only the
+abstract group they present.
+
+\paragraph{Allowed moves and solvability.}
+Write
 $R\AC S$ when one can pass from $R$ to $S$ by finitely many relator inversions,
 right multiplications by the other relator, and conjugations. The rank is
 always two. Put $\sol(R)$ for $R\AC(u,y)$. Conjugation by an arbitrary word
@@ -69,10 +94,6 @@ For every $s\in\N$, $\sol(G(2,s))$.
 \begin{proof}One of $s,s+1$ is divisible by two.\end{proof}
 
 \subsection*{Original coordinates and the square relation}
-The tuple $G(p,s)$ presents
-\[
-\langle u,y\mid u^2=y^{2s+1},\quad uy^pu=y^pu y^s\rangle.
-\]
 The square relation arises from the original family
 \begin{equation}\label{eq:original}
 P(n,a,b,c)=

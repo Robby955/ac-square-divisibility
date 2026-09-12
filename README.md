@@ -6,13 +6,21 @@ Contact: [robbysneiderman@gmail.com](mailto:robbysneiderman@gmail.com).
 
 With **GPT-6 Astra (OpenAI)**, AI research collaborator.
 
-This research note proves ordinary, fixed-rank Andrews–Curtis triviality for
+Let u,y be free generators. For integers p,s, define the ordered pair of
+relator words
 
 \[
 G(p,s)=(u^2y^{-(2s+1)},\;uy^pu y^{-s}u^{-1}y^{-p})
 \]
 
-when p and s are natural numbers and p divides s or s+1. In particular, every
+Setting both words equal to the identity gives the relations
+u² = y^(2s+1) and u y^p u = y^p u y^s. We call this the square family because
+the first relation contains u². The parameters p,s choose a member of the
+family; they are not additional generators. G denotes the specified relator
+pair on which Andrews–Curtis moves act.
+
+This note proves ordinary, fixed-rank Andrews–Curtis triviality when p and s
+are natural numbers and p divides s or s+1. In particular, every
 G(2,s) with nonnegative s is covered. The quantified proof also includes two
 arithmetic root families for integer p and a nonnegative quotient.
 
