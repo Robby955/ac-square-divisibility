@@ -1,0 +1,9 @@
+'AC.MillerSchupp.SquareFamily.Residual.halve_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.two_root_halve_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.halvingCost_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.degree_three_of_restoration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.degree_three_all_iff_restoration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

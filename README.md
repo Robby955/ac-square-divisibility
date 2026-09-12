@@ -1,0 +1,120 @@
+# Explicit AC constructions for divisibility subfamilies
+
+This research note proves ordinary, fixed-rank Andrews–Curtis triviality for
+
+\[
+G(p,s)=(u^2y^{-(2s+1)},\;uy^pu y^{-s}u^{-1}y^{-p})
+\]
+
+when p and s are natural numbers and p divides s or s+1. In particular, every
+G(2,s) with nonnegative s is covered. The quantified proof also includes two
+arithmetic root families for integer p and a nonnegative quotient.
+
+[Read the paper](paper/square-divisibility.pdf). Its source is
+[main.tex](paper/main.tex). The main proof consists of a fixed entry route,
+a recursive doubling witness and two explicit finishes. All substitutions
+restore the donor relator, and every basis transport includes its final
+ordinary AC correction.
+
+The entire square family remains open here. The next degree-three target is
+G(3,3m+1); its companion restoration remains unproved, beginning at d=2.
+The package states that restoration as a hypothesis and proves the resulting
+equivalence. It does not assume it, solve AK(3), or settle AC or Stable AC.
+
+## Reproduce the finite certificates
+
+Python 3.10 or later, standard library only:
+
+```sh
+python3 verify.py
+python3 experiment.py --matrix --output run/replay.json
+python3 experiment.py --p 6 --s 23 --output run/p6-s23.json
+```
+
+The fixed matrix contains 50 distinct presentations. All 50 replay with
+limits removed; 48 satisfy the frozen golden budgets. Cases (2,11) and
+(2,12) exceed the work budget. The six frozen comparison certificates are
+replayed independently; this construction improves none of their lengths.
+See [the full receipt](receipts/replay.json) for paths, hashes, work, peak
+length and timings. These are construction measurements, not new challenge
+solves or shortestness claims.
+
+The finite CLI accepts p,s in 0..100 and quotient at most 8. The bound prevents
+accidental large exports from an exponential witness constructor. It does
+not restrict the theorem. There is no search, policy inference, or model
+download in reproduction.
+
+## Check the quantified theorem
+
+Install Lean through elan if it is not already available. From this root:
+
+```sh
+cd lean
+lake exe cache get
+lake build
+cd ..
+python3 verify.py --lean
+```
+
+The first dependency setup requires network access. The pinned toolchain is
+Lean 4.29.1; Mathlib and its transitive revisions are in
+[lake-manifest.json](lean/lake-manifest.json). Verification checks dependency
+commits and tracked-file cleanliness. It builds the focused package and runs
+three strict trust-zero Lean commands, collecting 59 logical-dependency
+reports. Those reports admit only propext, Classical.choice and Quot.sound.
+There are no supplied conjecture assumptions or proof escapes.
+
+The existing tested receipt is [verification.json](receipts/verification.json).
+The local preparation run reused the existing pinned Mathlib package cache;
+it did not perform a fresh network bootstrap. Each paper-specific Lean
+module was built in the package's separate build directory. Build caches
+and local symlinks are excluded from the repository artifact.
+
+The main declaration is
+`AC.MillerSchupp.SquareFamily.P2.divisibility_square_solvable` in
+[ACSquareP2Families.lean](lean/ACSquareP2Families.lean).
+The root construction is in [ACSquareP2Root.lean](lean/ACSquareP2Root.lean),
+the exact entry is in [ACSquareP2Entry.lean](lean/ACSquareP2Entry.lean), and
+the unresolved induction interface is in [ACSquareHalving.lean](lean/ACSquareHalving.lean).
+The complete dependency closure is included; sibling research folders are
+not needed.
+
+## Compile the paper
+
+With a standard TeX Live installation containing the packages used in the source:
+
+```sh
+python3 paper/generate_table.py
+cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
+```
+
+The shipped PDF was compiled and its pages were visually inspected. The
+appendix contains every macro of the integer-parameter entry route.
+
+## Contribution and provenance
+
+[PRIOR_WORK.md](PRIOR_WORK.md) records the focused comparison and its limits.
+The contribution is an explicit arithmetic construction, quantified Lean
+proofs and independently replayable exports. Priority for the underlying
+AC-triviality classes has not been established; this is not the first AC
+formalization or certificate verifier.
+
+The proof sources come from commit
+`68ceae3d422eee6de28bfd54793b21b2031cbda3` of the preserved research worktree.
+[SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) records the source hashes
+and extraction boundaries. The package has a separate release history.
+Its Git commit identifies the submitted package version; the proof-source
+commit above is provenance, not a substitute for that release commit.
+
+The official AC definitions and verifier are pinned to SAIR commit
+`99a65377c5c4f412cd9af7b8d31c41464a855736`. Their Apache 2.0 license is retained
+in [lean/OFFICIAL-LICENSE](lean/OFFICIAL-LICENSE) and
+[official_verifier/LICENSE](official_verifier/LICENSE). The copied verifier
+core and canonicalization module are unchanged.
+
+Research and preparation used Codex and Fable assistance. The preserved Fable
+analysis supplied the quotient-two pinch interpretation and earlier p=±1
+connection to the published MS(1,w) result. The existing finite solved
+instances and baseline certificates retain their prior credit. Public release
+should retain these distinctions and the paper's references.

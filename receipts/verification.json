@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "proof_source_modules": 28,
+  "python_tests": 9,
+  "lean_checked": true,
+  "axiom_reports": 59,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.120393916964531,
+      "log": "tests.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.5104868330527097,
+      "log": "lean-version.log"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.6811319999396801,
+      "log": "lean-build.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "ACSquareP2Checks.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.3190528750419617,
+      "log": "ACSquareP2Checks-trust-zero.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "ACSquareP3Checks.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.1703090000664815,
+      "log": "ACSquareP3Checks-trust-zero.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "PaperChecks.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.7246273340424523,
+      "log": "PaperChecks-trust-zero.log"
+    }
+  ]
+}

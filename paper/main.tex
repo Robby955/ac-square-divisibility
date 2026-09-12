@@ -1,0 +1,455 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Explicit Andrews-Curtis constructions for divisibility subfamilies of square presentations},pdfauthor={Rob Sneiderman}}
+\setlength{\emergencystretch}{1em}
+\raggedbottom
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\AC}{\mathrel{\sim_{\mathrm{AC}}}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\sol}{\mathsf{Sol}}
+\newcommand{\conj}[2]{#1#2#1^{-1}}
+\title{Explicit Andrews--Curtis constructions for\protect\\ divisibility subfamilies of square presentations}
+\author{Rob Sneiderman}
+\date{September 12, 2026\quad---\quad Research draft}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We give finite, explicitly witnessed ordinary Andrews--Curtis constructions
+for the ordered presentations
+\[
+G(p,s)=\bigl(u^2y^{-(2s+1)},\;uy^pu y^{-s}u^{-1}y^{-p}\bigr).
+\]
+For natural numbers $p,s$, the construction applies whenever $p\mid s$ or
+$p\mid(s+1)$; in particular, it covers $G(2,s)$ at every nonnegative height.
+A fixed route enters a root-conjugacy presentation, after which an iterated
+doubling witness supplies either a power elimination or a reduction of the
+root degree. Every substitution carries an ordered product of conjugates
+of the other relator and restores that relator. The quantified theorems are
+formalized in Lean using the SAIR ordinary AC relation. A separate exporter
+produces numbered certificates for independent replay. We also state an
+exact residual reduction and the unresolved companion-restoration condition
+for $G(3,3m+1)$. The remaining square family and the general conjectures are
+not settled by these results.
+\end{abstract}
+
+\section{Statement and context}
+Work in the free group $F=F(u,y)$, with ordered pairs of relators. Write
+$R\AC S$ when one can pass from $R$ to $S$ by finitely many relator inversions,
+right multiplications by the other relator, and conjugations. The rank is
+always two. Put $\sol(R)$ for $R\AC(u,y)$. Conjugation by an arbitrary word
+is counted as one mathematical primitive; the executable certificates expand
+it into conjugations by letters. Multiplication by the inverse of the other
+relator costs three primitives, including the two inversions that restore it.
+
+\begin{theorem}[Divisibility construction]\label{thm:main}
+Let $p,s\in\N$, where $0\in\N$. If $p\mid s$ or $p\mid(s+1)$, then
+$\sol(G(p,s))$.
+\end{theorem}
+The proof constructs the moves without assuming that the presented group is
+trivial. Thus triviality is also a consequence. The admissible case $p=0$
+in this theorem is precisely $s=0$.
+
+\begin{corollary}\label{cor:p2}
+For every $s\in\N$, $\sol(G(2,s))$.
+\end{corollary}
+\begin{proof}One of $s,s+1$ is divisible by two.\end{proof}
+
+Our point of comparison is the Miller--Schupp family
+\[
+\operatorname{MS}(n,w)=\langle x,y\mid x^{-1}y^nx=y^{n+1},\ x=w\rangle,
+\]
+where $n>0$ and $w$ has exponent sum zero on $x$. Shehper et al.\ prove
+AC-triviality for all $\operatorname{MS}(1,w)$, for all
+$\operatorname{MS}(n,y^{-1}xyx^{-1})$, and for
+$\operatorname{MS}(2,y^{-k}x^{-1}yxy)$ for every integer $k$
+\cite[Theorem B; Theorems 2, 3 and Corollary 9]{shehper}.
+Their substitution operation is an explicit predecessor of the witness
+operations used here. The earlier $p=1$ analysis in this project enters
+their $\operatorname{MS}(1,w)$ class. The proof below supplies its own
+root-family witnesses rather than importing that theorem as an assumption.
+
+Substitution by conjugate products and transport under automorphisms are
+established techniques; see Panteleev--Ushakov \cite{pu}. Lackenby's ordinary
+AC theorem for thickenable balanced presentations gives a different sufficient
+condition \cite[Theorem 1.3]{lackenby}. We have not determined how the entire
+family here intersects that geometric class. Lean formalization of AC and
+automated certificate checking also have prior implementations
+\cite{zhang,sair}. The contribution presented here is this explicit arithmetic
+construction and its formal proof package. We make no priority claim for
+the underlying AC-triviality classes or the general verification methods.
+
+\section{Witnesses that compile to ordinary moves}\label{sec:witness}
+\begin{definition}
+A witness relative to a relator $r$, from $a$ to $b$, is a finite ordered list
+$W=((g_1,\epsilon_1),\ldots,(g_t,\epsilon_t))$, with $\epsilon_i\in\{1,-1\}$,
+together with the identity in the ambient free group
+\begin{equation}\label{eq:witness}
+a\prod_{i=1}^t g_i r^{\epsilon_i}g_i^{-1}=b.
+\end{equation}
+We write $a\xRightarrow[r]{W}b$.
+\end{definition}
+This contains more data than an equality in the presented quotient.
+
+\begin{lemma}[Witness compilation]\label{lem:compile}
+An identity \eqref{eq:witness} gives $(a,r)\AC(b,r)$, with the second
+relator restored after each factor. A positive factor costs three mathematical
+primitives and a negative factor costs five. The analogous assertion holds
+with the two slots exchanged.
+\end{lemma}
+\begin{proof}
+For a positive factor, conjugate the donor $r$ by $g_i$, right multiply the
+recipient, and conjugate the donor back by $g_i^{-1}$. For a negative factor,
+invert the donor before the multiplication and invert it again afterward.
+Repeat in the listed order.\end{proof}
+
+For completeness, the witness operations used below are explicit. Composition
+concatenates factor lists. Conjugation by $h$ replaces every $g_i$ by $hg_i$.
+Given $a\Rightarrow b$ and $c\Rightarrow d$ relative to the same donor,
+a witness $ac\Rightarrow bd$ is obtained by replacing each conjugator in
+the first list by $c^{-1}g_i$, then appending the second list. To obtain
+$a^{-1}\Rightarrow b^{-1}$, reverse the list, negate all signs, and replace
+each conjugator by $ag_i$. Iterating the product operation constructs
+positive powers; inverse words give negative powers. These rules follow
+directly by multiplying \eqref{eq:witness} and do not require a witness
+extraction oracle.
+
+\section{Entry into a root-conjugacy pair}\label{sec:entry}
+Set
+\begin{equation}\label{eq:root}
+B_p=y^{-p}u^2y^pu^{-1},\qquad
+A_s=y^{-(s+1)}u^{-1}y^su^{-1}.
+\end{equation}
+\begin{lemma}[Uniform entry]\label{lem:entry}
+For all integers $p,s$, a route of 61 mathematical primitives takes $G(p,s)$
+to $(f(B_p),f(A_s))$, where
+\[
+f(u)=y^{s+1-p}u^{-1}y^p,\qquad f(y)=y^{-1}.
+\]
+We have $\sol(G(p,s))$ if and only if $\sol((B_p,A_s))$.
+\end{lemma}
+\begin{proof}
+The complete route is in Appendix~\ref{app:route}. After its first twelve
+macros, which cost eighteen primitives, the pair is
+\[
+\bigl(y^{-p}u^{-1}y^pu^{-1}y^su,\quad
+u y^{-p}u^{-2}y^pu y^{-1}\bigr).
+\]
+The remaining macros cost 43 primitives and end at the displayed image pair.
+Each step is a free-group identity, independently checked in the accompanying
+Lean files \texttt{ACDiagonalDescent} and \texttt{ACSquareP2Entry}.
+
+The map $f$ is an automorphism: its inverse sends
+$u$ to $y^{-p}u^{-1}y^{p-s-1}$ and $y$ to $y^{-1}$.
+A homomorphism sends every AC step to an AC step, with conjugators mapped
+by that homomorphism. To finish a transported solution at $(f(u),f(y))$,
+conjugate its first relator by $y^{p-s-1}$, obtaining $u^{-1}y^{s+1}$;
+right multiply it by the second relator to power $s+1$, then invert both
+relators. For the inverse image basis, conjugation by $y^p$ similarly gives
+$u^{-1}y^{-s-1}$; right multiplication by the second relator to power
+$-s-1$, then two inversions, finishes. These explicit basis corrections and
+reversibility of the displayed route give both implications.
+\end{proof}
+The change of coordinates in this argument transports a complete path and
+includes its final correction; it is not inserted as an additional AC move.
+
+\section{The two arithmetic finishes}\label{sec:finish}
+\begin{lemma}[Iterated doubling]\label{lem:double}
+For $p\in\Z$ and $m\in\N$, there is a supplied witness relative to $B_p$
+\[
+y^{pm}u y^{-pm}\ \Longrightarrow\ u^{2^m}.
+\]
+The recursive list described here has $2^m-1$ factors.
+\end{lemma}
+\begin{proof}
+The basic witness from $y^puy^{-p}$ to $u^2$ has the single positive factor
+with conjugator $y^pu^{-1}$; explicitly,
+\[
+(y^puy^{-p})(y^pu^{-1})B_p(y^pu^{-1})^{-1}=u^2.
+\]
+Start at $m=0$ with the empty witness. At stage $m+1$, conjugate the
+stage-$m$ witness by $y^p$, then compose with the $2^m$-th power of the
+basic witness. The resulting target is $u^{2^{m+1}}$. The factor count
+satisfies $L_0=0$ and $L_{m+1}=L_m+2^m$, proving the formula.
+\end{proof}
+
+\begin{lemma}[Power finish]\label{lem:power}
+For any integers $k,e$, $\sol((B_k,y^{-1}u^e))$.
+\end{lemma}
+\begin{proof}
+With donor $q=y^{-1}u^e$, the identity $yq=u^e$ supplies a one-factor witness
+replacing $y$ by $u^e$. Apply its power and product witnesses to
+$B_k=y^{-k}u^2y^ku^{-1}$ to obtain $u$. The donor is restored. Right multiply
+the second relator by the first to power $-e$ to obtain $y^{-1}$, then invert.
+\end{proof}
+
+\begin{theorem}[Arithmetic root families]\label{thm:root}
+For all $p\in\Z$ and $m\in\N$, both
+\[
+\sol((B_p,A_{pm}))\quad\text{and}\quad
+\sol((B_p,A_{pm+p-1}))
+\]
+hold by finite witness constructions.
+\end{theorem}
+\begin{proof}
+Put $d=2^m$. In the first case, conjugate the companion by $y^{pm}$:
+\[
+y^{pm}A_{pm}y^{-pm}
+=y^{-1}u^{-1}(y^{pm}u^{-1}y^{-pm}).
+\]
+Use the inverse-word witness of Lemma~\ref{lem:double} in the parenthesized
+factor. This leaves $y^{-1}u^{-(d+1)}$, to which Lemma~\ref{lem:power} applies.
+
+In the second case, the same conjugation and witness leave
+\begin{equation}\label{eq:q}
+q=y^{-p}u^{-1}y^{p-1}u^{-d}.
+\end{equation}
+Writing $v=u^{-1}y^{p-1}u^{-d}$, the exact identity $y^pq=v$ is a one-factor
+witness relative to $q$. Its inverse-word and product witnesses replace
+the two occurrences of $y^p$ and its inverse in $B_p$, giving
+\[
+v^{-1}u^2v u^{-1}=u^d B_{p-1}u^{-d}.
+\]
+Conjugate this first relator by $u^{-d}$. The pair is now $(B_{p-1},q)$.
+Conjugate $q$ by $y^{p-1}$ and rewrite it as
+\[
+y^{p-1}q y^{-(p-1)}
+=y^{-1}u^{-1}(y^{p-1}u^{-d}y^{-(p-1)}).
+\]
+The $(-d)$-th power of the basic degree-$(p-1)$ doubling witness changes
+this to $y^{-1}u^{-(2d+1)}$. Apply Lemma~\ref{lem:power}. At each substitution,
+Lemma~\ref{lem:compile} restores the donor, so the concatenation is a path
+of ordinary rank-two moves.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+If $s=pm$ with $m\in\N$, use the first case of Theorem~\ref{thm:root} and
+Lemma~\ref{lem:entry}. If $s+1=pk$ with $p,s,k\in\N$, then $k\geq1$;
+set $m=k-1$, so $s=pm+p-1$, and use the second case. This includes the
+degenerate $p=s=0$ through the first case.
+\end{proof}
+
+The same argument also proves $\sol(G(p,pm))$ and $\sol(G(p,pm+p-1))$
+for arbitrary integer $p$ and natural $m$. Natural divisibility in
+Theorem~\ref{thm:main} is a convenient formulation with a nonnegative quotient.
+The doubling construction can produce long certificates; no short-path or
+polynomial-complexity claim follows from the theorem.
+
+\section{Parameter consequences and the remaining induction}\label{sec:open}
+The formal package also includes explicit sign, period, and original-coordinate
+transports. One period $p\mapsto p+(2s+1)$ uses four supplied factors of the
+square relator. Together with sign transport, the elementary $p=0$ case,
+and Theorem~\ref{thm:main}, this covers the residues
+\[
+p\equiv 0,\ \pm1,\ \pm2,\ \pm s\pmod{2s+1},\qquad s\in\N.
+\]
+In particular all integer $p$ are covered when $s=3$. A supplied finite
+65-numbered-move residual seed, corresponding to $G(3,4)$, completes all
+integer $p$ at $s=4$. These parameter transports and the seed are proved in
+\texttt{ACSquareP2Families}, \texttt{ACSquareP3Seed}, and
+\texttt{ACSquareP3Families}. The seed's 65 moves start at its residual root
+pair, not at $G(3,4)$ itself; its classical primitive cost is 81.
+
+For reference, write the original presentation tuple as
+\[
+P(n,a,b,c)=
+\bigl(x^{-1}y^nxy^{-(n+1)},\quad x^{-1}y^a x y^b x^{-1}y^c\bigr).
+\]
+The supplied quotient-two pinches and parameter shears transfer the
+divisibility result to $P(2m,m,p,c)$ and $P(2m+1,p,m+1,c)$, for natural
+$m,p$ with $p\mid m$ or $p\mid(m+1)$ and every integer $c$.
+They also transfer the completed $s=3,4$ residue sets to
+$P(6,3,b,c)$, $P(7,a,4,c)$, $P(8,4,b,c)$, and $P(9,a,5,c)$, with all
+remaining parameters integral. The supplementary Lean files contain the
+pinch witnesses and complete transports; these statements do not assert that
+the entire three-parameter family at any of these exponents is solved.
+
+Here is the precise limitation of the proposed extension. Put
+\[
+Q_{r,d}=y^{-(r+1)}u^{-1}y^r u^{-d}.
+\]
+\begin{proposition}[Residual equivalence]\label{prop:residual}
+For $p,r\in\Z$ and $m\in\N$,
+\[
+\sol(G(p,pm+r))\quad\Longleftrightarrow\quad
+\sol((B_p,Q_{r,2^m})).
+\]
+\end{proposition}
+\begin{proof}
+Use Lemma~\ref{lem:entry}. Conjugating $A_{pm+r}$ by $y^{pm}$ gives
+$y^{-(r+1)}u^{-1}y^r(y^{pm}u^{-1}y^{-pm})$.
+The inverse-word doubling witness gives $Q_{r,2^m}$ while keeping $B_p$.
+All these ordinary paths can be reversed.
+\end{proof}
+
+For the next residue $p=3,r=1$, a further supplied two-factor substitution
+and invertible coordinate transport give the equivalent pair $(B_2,C_{2^m})$,
+where
+\[
+C_d=y^{-1}u^{-1}y^{-1}u^{-1}y u^{-d},\qquad
+D_d=y^{-3}u^{-1}y^{-1}u^{-1}y^3u^{-d}.
+\]
+Witnessed halving yields $(B_2,C_{2d})\AC(B_2,D_d)$, but the outer
+$y$-exponents have changed. Closing the induction requires
+\begin{equation}\label{eq:restoration}
+(B_2,D_d)\AC(B_2,C_d),\qquad d=2,4,8,\ldots.
+\end{equation}
+The package proves that \eqref{eq:restoration} for all these $d$ is
+equivalent to $\sol(G(3,3m+1))$ for every $m\in\N$, using the supplied
+$m=0,1$ seeds. Neither side of this equivalence is proved here. In particular,
+the first missing restoration is $d=2$; halving alone does not establish it.
+This is a target for further work, and even its resolution would still leave
+other square-family parameters to treat.
+
+\section{Formal proof and executable evidence}\label{sec:repro}
+The package uses Lean 4.29.1 and the pinned Mathlib revision in its Lake
+manifest. Its copy of the official \texttt{AC.lean} is byte-identical to
+the SAIR source \cite{sair} at commit
+\begin{center}\small
+\texttt{99a65377c5c4f412cd9af7b8d31c41464a855736}.
+\end{center}
+The main statement is
+\texttt{AC.MillerSchupp.SquareFamily.P2.}\allowbreak
+\texttt{divisibility\_square\_solvable}.
+The root witness identity and both arithmetic finishes are quantified Lean
+declarations, not conclusions inferred from the finite replay grid.
+Logical-dependency reports admit only the usual Lean axioms
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+The conjectures are definitions of propositions and are never assumed.
+
+The Python exporter specializes the fixed affine route, constructs the finite
+witnesses, and expands them into the official ordinary rank-two move table.
+Its root-constructor bodies were extracted unchanged from the recorded research
+source. An independent word interpreter maintains intermediate states, and the
+unchanged SAIR verifier checks the final numbered path. The exporter also
+handles the admissible zero case explicitly. The finite CLI has resource
+bounds; those are not restrictions on the quantified Lean theorem.
+
+The shipped experiment uses 50 distinct pairs: the 44 distinct pairs
+$(p,pm)$ and $(p,pm+p-1)$ for $1\leq p\leq6$, $0\leq m\leq3$; all
+$(2,s)$ for $0\leq s\leq12$; and $(0,0)$. All 50 pass unlimited official
+replay. Of these, 48 satisfy the golden budgets of 100,000 numbered moves,
+10,000 peak total relator length, and 5,000,000 work units. The exceptions
+are $(2,11)$ and $(2,12)$, which exceed the work budget.
+The recorded construction time was 2.980 seconds and replay time 0.567
+seconds on the machine identified in \texttt{receipts/replay.json}; these
+are one-run measurements, not portable performance guarantees.
+
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$p$ & $s$ & Numbered moves & Official work & Peak length\\
+\midrule
+2 & 0 & 183 & 3,185 & 35\\
+2 & 3 & 282 & 9,215 & 83\\
+2 & 6 & 637 & 58,022 & 273\\
+2 & 10 & 5,457 & 2,766,856 & 1,273\\
+2 & 11 & 19,176 & 14,902,075 & 1,779\\
+2 & 12 & 21,819 & 26,190,511 & 2,829\\
+\bottomrule
+\end{tabular}
+\end{center}
+The six exact overlaps with frozen search certificates all replay independently.
+The uniform constructor improves none of their lengths. Individual solved
+instances in the earlier comparison were already represented in the public
+Caltech solved materials; the computational evidence here is reproduction
+and validation, not a claim of newly solved benchmark challenges
+\cite{fagan}. Certificate counts, witness-factor counts and primitive costs
+measure different objects and are not interchanged.
+
+From the repository root, the reproduction commands are
+\begin{verbatim}
+python3 verify.py --lean
+python3 experiment.py --matrix --output run/replay.json
+\end{verbatim}
+Lean and the pinned Mathlib dependencies must first be available as described
+in the README. The package needs no model weights, search run, sibling
+research directory, or credentials. The path exporter and the Lean proof are
+separate implementations; identical complete witness lists between them are
+not asserted. Nine regression tests cover all numbered move types, donor
+restoration, the affine entry at signed parameters, witness corruption,
+boundary inputs, and equality with all 49 previously recorded constructed paths.
+
+\paragraph{Provenance and assistance.}
+The research source is frozen at commit
+\begin{center}\small
+\texttt{68ceae3d422eee6de28bfd54793b21b2031cbda3}.
+\end{center}
+The accompanying
+\texttt{SOURCE\_PROVENANCE.json} records the copied and extracted source hashes.
+This work was developed with Codex and Fable assistance for symbolic
+exploration, coding, proof development, and review. Fable's preserved
+square-family analysis identified the quotient-two pinch and the earlier
+$p=\pm1$ connection to the published $\operatorname{MS}(1,w)$ theorem.
+The finite baseline certificates are credited to the earlier solved materials,
+not to the uniform construction. Human author and release review remain
+appropriate before public circulation of this draft.
+
+\appendix
+\section{A complete affine entry route}\label{app:route}
+In the following table, slots are indexed by $0,1$.
+$I_i$ inverts relator $i$, $M_i^\epsilon$ replaces it by
+$R_iR_{1-i}^\epsilon$, and $C_i(g)$ conjugates it by $g$.
+An $M_i^{-1}$ entry expands into inversion of the donor, multiplication,
+and inversion of the donor again. Apply the rows in order to $G(p,s)$.
+Rows 1--12 reach the normal form in Lemma~\ref{lem:entry}; rows 13--51
+reach $f(B_p,A_s)$. Thus the 51 macros comprise 61 primitives.
+The table is generated from the same frozen affine route distributed as
+\texttt{entry\_route.json}; it holds for all integer $p,s$.
+\clearpage
+\begingroup
+\small
+\renewcommand{\arraystretch}{0.95}
+\input{entry-table.tex}
+\endgroup
+\clearpage
+
+\begin{thebibliography}{9}
+\bibitem{shehper}
+A. Shehper, A. M. Medina-Mardones, L. Fagan, B. Lewandowski, A. Gruen,
+Y. Qiu, P. Kucharski, Z. Wang, and S. Gukov.
+\emph{What makes math problems hard for reinforcement learning: a case study}.
+\href{https://arxiv.org/abs/2408.15332v2}{arXiv:2408.15332v2}.
+
+\bibitem{pu}
+P. Panteleev and A. Ushakov.
+\emph{Conjugacy search problem and the Andrews--Curtis conjecture}.
+\href{https://arxiv.org/abs/1609.00325}{arXiv:1609.00325}.
+
+\bibitem{lackenby}
+M. Lackenby.
+\emph{The stable Andrews--Curtis conjecture and thickenable presentations of
+the trivial group}.
+\href{https://arxiv.org/abs/2606.06122v1}{arXiv:2606.06122v1}, 2026.
+
+\bibitem{zhang}
+C. Zhang, A. Zhou, R. J. George, S. Gukov, and A. Anandkumar.
+\emph{AI-Driven Mathematical Discovery for the Andrews--Curtis Conjecture}.
+NeurIPS 2025 MATH-AI workshop.
+\href{https://openreview.net/forum?id=lt3Lpa4d2d}{OpenReview: lt3Lpa4d2d}.
+
+\bibitem{fagan}
+L. Fagan, M. Tarquini, A. Shehper, M. Manko, A. Gruen, C. Huang,
+G. Butbaia, D. Passaro, and S. Gukov.
+\emph{The Two-Hump Problem: Bridging the Difficulty Gap in Mathematical
+Reinforcement Learning}.
+\href{https://arxiv.org/abs/2606.21611v1}{arXiv:2606.21611v1}, 2026.
+
+\bibitem{sair}
+SAIR competition.
+\emph{Andrews--Curtis: shared formal statements and verifier}.
+\href{https://github.com/SAIRcompetition/Andrews-Curtis/tree/99a65377c5c4f412cd9af7b8d31c41464a855736}{Repository at the pinned official commit}, 2026.
+\end{thebibliography}
+\end{document}

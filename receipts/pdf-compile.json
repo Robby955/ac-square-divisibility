@@ -1,0 +1,18 @@
+{
+  "compiler": "texlive",
+  "exit_code": 0,
+  "pdf_exists": true,
+  "source_sha256": "575c144215890b8cc6a6ace73d4a41dfbf6f393c6c77eadf5ba7b2f44575eb58",
+  "pdf_sha256": "5474b9005e19f060e21b0ff9dbc0e8f73d9079229d5143c02280f2526a980f9e",
+  "pages": 8,
+  "layout_warnings": [],
+  "visual_inspection": "All eight rendered pages inspected; entry table kept together on page seven.",
+  "command": [
+    "latexmk",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-outdir=build",
+    "main.tex"
+  ]
+}
