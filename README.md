@@ -126,6 +126,14 @@ derives both arithmetic finishes. The complete 51-row schedule remains in
 [typeset listing](paper/entry-table.tex). The transcription check exercises
 the displayed identities at signed parameters; it is not a quantified proof.
 
+Section 5 states the pinch, mirror/sign, complementary-height and parameter
+shear transports as lemmas, then displays the four-factor period
+identity. The residue corollaries follow from those witnesses; height four
+also uses the existing finite seed. A separate elementary group calculation
+checks that the square presentations define the trivial group. It supplies
+no new AC path. The new transport statements restate the existing formal
+constructions, with their factor lists checked by the exposition script.
+
 [REVIEW_RESPONSE.md](REVIEW_RESPONSE.md) records the response to the supplied
 manuscript review, including the forward automorphism direction and the
 distinction between construction length and shortest-path complexity.

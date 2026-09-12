@@ -43,8 +43,8 @@ of which changes the root degree from $p$ to $p-1$.
 
 The quantified theorem is proved in Lean. Explicit products of conjugates
 also give an executable construction whose exported paths are checked by the
-official SAIR verifier. This construction can have exponential length and
-makes no shortest-path claim. For $G(3,3m+1)$ we isolate an exact remaining
+official SAIR verifier. This construction can have exponential length;
+no shortness claim is made. For $G(3,3m+1)$ we isolate an exact remaining
 companion-restoration condition. That condition and the full square-family
 problem are open.
 \end{abstract}
@@ -202,6 +202,7 @@ the numbered multiplication-by-inverse move directly. Identity conjugations
 still count as mathematical primitives but emit no numbered moves.
 For an exported path $R^{(0)},\ldots,R^{(L)}$, official work is
 $\sum_{j=0}^{L} (|R^{(j)}_0|+|R^{(j)}_1|)$, with each word freely reduced.
+The initial pair is included in this sum.
 Thus 61 entry primitives, 81 primitives for a residual seed, and 183 or
 21,819 numbered moves for complete examples measure different paths and
 different operations. None is a shortestness assertion.
@@ -232,8 +233,12 @@ The remaining macros cost 43 primitives and end at the displayed image pair.
 Each step is a free-group identity, checked in the accompanying
 Lean files \texttt{ACDiagonalDescent} and \texttt{ACSquareP2Entry}.
 
-The algebraic content of the remaining route is two donor substitutions.
-Temporary changes of basis and cyclic normalization put the first of them
+The following identities explain the two donor substitutions in macros
+13--51, in temporary bases related by the shears named below. They do not
+by themselves specify that route: the full schedule, including the
+normalizations and carried-back conjugators, is proved in
+\texttt{ACSquareP2Entry}. Temporary changes of basis and cyclic
+normalization put the first substitution
 in the following form:
 \[
 \begin{aligned}
@@ -363,8 +368,7 @@ Applying the inverse doubling witness leaves the companion
 \begin{equation}\label{eq:q}
 q=y^{-p}u^{-1}y^{p-1}u^{-d}.
 \end{equation}
-The residual block $y^{p-1}$ now suggests changing the root degree to $p-1$.
-The companion itself supplies that change. Set $v=u^{-1}y^{p-1}u^{-d}$.
+Set $v=u^{-1}y^{p-1}u^{-d}$.
 The exact identity $y^pq=v$ is a one-factor witness relative to $q$.
 Its inverse-word and product witnesses replace $y^p$ and $y^{-p}$ in
 $B_p=(y^p)^{-1}u^2y^pu^{-1}$, while retaining $q$. The result is
@@ -408,63 +412,228 @@ The doubling construction can produce long certificates; no short-path or
 polynomial-complexity claim follows from the theorem.
 
 \section{Parameter consequences and the remaining induction}\label{sec:open}
-Sign, period, and original-coordinate transports give further consequences.
-One period $p\mapsto p+(2s+1)$ uses four factors of the
-square relator. Together with sign transport, the elementary $p=0$ case,
-and Theorem~\ref{thm:main}, this covers the residues
+We record the witnesses behind the parameter transports. To allow the two
+complementary heights to vary separately, put
 \[
-p\equiv 0,\ \pm1,\ \pm2,\ \pm s\pmod{2s+1},\qquad s\in\N.
+S_N=u^2y^{-N},\qquad T_{p,s}=uy^pu y^{-s}u^{-1}y^{-p},\qquad
+M_{p,s}=uy^pu y^{-p}u^{-1}y^{-s}.
 \]
-In particular all integer $p$ are covered when $s=3$. A finite
-65-numbered-move residual seed, corresponding to $G(3,4)$, completes all
-integer $p$ at $s=4$. These parameter transports and the seed are proved in
-\texttt{ACSquareP2Families}, \texttt{ACSquareP3Seed}, and
-\texttt{ACSquareP3Families}. The seed's 65 moves start at its residual root
-pair, not at $G(3,4)$ itself; its classical primitive cost is 81.
+Thus $G(p,s)=(S_{2s+1},T_{p,s})$. Write
+$\mathcal C_R(g)=gRg^{-1}$ for a conjugate of the donor $R$.
+In the original coordinates $x,y$, the standard pair in the notation
+$\sol$ is $(x,y)$.
 
 \subsection{The original-coordinate transfers}\label{sec:coordinates}
-Here is why the dictionary following \eqref{eq:original} has quotient two.
-At $c=0$, let $q=x^{-1}y^a x y^b x^{-1}$ be the second relator, and set
-$a_0=x^{-1}y^a x$, $z=xy^{-b}$. Since $q=a_0z^{-1}$, the identity
+\begin{lemma}[Quotient-two pinches]\label{lem:pinches}
+Let $n\in\N$, $a,b\in\Z$, and $q=x^{-1}y^a x y^b x^{-1}$. Then
 \[
-a_0(z^{-1}q^{-1}z)=z
+\begin{aligned}
+n=2a&\quad\Longrightarrow\quad
+P(n,a,b,0)\AC\bigl((xy^{-b})^2y^{-(n+1)},q\bigr),\\
+n+1=2b&\quad\Longrightarrow\quad
+P(n,a,b,0)\AC\bigl((xy^{-a})^2y^{-n},q\bigr).
+\end{aligned}
 \]
-replaces $x^{-1}y^a x$ by $xy^{-b}$ using one negative donor factor.
-If $n=2a$, the first relator is $a_0^2y^{-(n+1)}$. Applying the product
-witness twice leaves $(xy^{-b})^2y^{-(n+1)}$ while restoring $q$.
-This is the even row of the dictionary, with $a=s,b=p$ and $u=xy^{-p}$.
-The transported second relator is, up to inversion and conjugation, the
-mirror word $uy^pu y^{-p}u^{-1}y^{-s}$. The witnessed reflection in
-\texttt{ACSquareFamily.mirror\_solvable} transfers the solution from
-$G(p,s)$ to this pair.
-
-For the odd row, use instead
+Each pinch uses two negative donor factors; the second also uses inversion
+and conjugations of the first relator.
+\end{lemma}
+\begin{proof}
+Set $a_0=x^{-1}y^a x$ and $z=xy^{-b}$. Since $q=a_0z^{-1}$,
+\[
+a_0\mathcal C_q(z^{-1})^{-1}=z.
+\]
+When $n=2a$, apply the square of this witness to
+$a_0^2y^{-(n+1)}$. For the other pinch, use the one-factor identity
 \[
 (xy^b x^{-1})q^{-1}=y^{-a}x.
 \]
-When $n+1=2b$, inversion and conjugation of the first relator expose
-$(xy^b x^{-1})^2y^{-n}$. Two donor factors change this to
-$(y^{-a}x)^2y^{-n}$; conjugating by $y^a$ gives $(xy^{-a})^2y^{-n}$.
-Taking $a=p,b=s+1,n=2s+1$ again produces $u^2y^{-(2s+1)}$.
-The companion has height $s+1$ instead of $s$; the complementary-height
-transport \texttt{complement\_steps} exchanges these heights while keeping
-their sum $2s+1$. It therefore transfers a solution of $G(p,s)$.
+If $n+1=2b$, invert the first relator and conjugate it by $x$, exposing
+$(xy^b x^{-1})^2y^{-n}$. The squared witness gives
+$(y^{-a}x)^2y^{-n}$, and conjugation by $y^a$ gives the stated endpoint.
+Lemma~\ref{lem:compile} restores $q$ after each factor. These are the
+\texttt{left\_pinch} and \texttt{right\_pinch} paths in
+\texttt{ACSquareFamily}.
+\end{proof}
 
-Finally, $c$ is removed by an explicit shear transport. Let
-$\phi_t(x)=xy^t$ and $\phi_t(y)=y$. Conjugating both relators of
-$\phi_t(P(n,a,b,c))$ by $y^t$ gives $P(n,a,b,c-t)$.
-The image basis $(xy^t,y)$ is corrected by right multiplying the first
-relator by the second to power $-t$. These transports and their inverses
-justify all integral values of $c$ without adding a generator move.
+\begin{lemma}[Mirror and sign transport]\label{lem:mirror}
+For all integers $N,p,s$,
+\[
+\sol((S_N,T_{p,s}))\quad\Longleftrightarrow\quad
+\sol((S_N,M_{p,s}))\quad\Longleftrightarrow\quad
+\sol((S_N,T_{-p,s})).
+\]
+\end{lemma}
+\begin{proof}
+Let $\iota(u)=u^{-1}$ and $\iota(y)=y^{-1}$, and put
+$g=(uy^pu)^{-1}$. The free-group identities
+\[
+y^{-N}S_N^{-1}y^N=\iota(S_N),\qquad
+gM_{p,s}^{-1}g^{-1}=\iota(T_{p,s})
+\]
+give a four-primitive path from $(S_N,M_{p,s})$ to
+$\iota(S_N,T_{p,s})$. Transport a complete solution by $\iota$ and
+invert both endpoint relators to correct $(u^{-1},y^{-1})$. Since
+$\iota^2$ is the identity, this proves both directions of the first
+equivalence.
 
-The quotient-two pinches and parameter shears thus transfer the
-divisibility result to $P(2m,m,p,c)$ and $P(2m+1,p,m+1,c)$, for natural
-$m,p$ with $p\mid m$ or $p\mid(m+1)$ and every integer $c$.
-They also transfer the completed $s=3,4$ residue sets to
-$P(6,3,b,c)$, $P(7,a,4,c)$, $P(8,4,b,c)$, and $P(9,a,5,c)$, with all
-remaining parameters integral. The supplementary Lean files contain the
-pinch witnesses and complete transports; these statements do not assert that
-the entire three-parameter family at any of these exponents is solved.
+For the second equivalence, put
+\[
+e=(uy^p)^{-1}M_{p,s}(uy^p)
+  =uy^{-p}u^{-1}y^{-s}uy^p.
+\]
+The two-factor identity
+\[
+e\,\mathcal C_{S_N}(y^{-p}u^{-1}y^s)
+  \mathcal C_{S_N}(y^{-p}u^{-1})^{-1}=T_{-p,s}
+\]
+gives an ordinary path of nine primitives from the mirror pair to the
+negative-degree pair. Reversing this path completes the equivalence.
+The corresponding formal paths are \texttt{mirror\_solvable} and
+\texttt{mirror\_negative\_steps}.
+\end{proof}
+
+\begin{lemma}[Complementary heights]\label{lem:complement}
+For integers $p,s,k$, put $N=s+k$. There is a thirteen-primitive path
+\[
+(S_N,T_{p,s})\AC(S_N,T_{p,k}).
+\]
+\end{lemma}
+\begin{proof}
+Invert the second relator and conjugate it by $u^{-1}$, obtaining
+\[
+e=u^{-1}T_{p,s}^{-1}u
+ =u^{-1}y^pu y^su^{-1}y^{-p}.
+\]
+For $a=y^pu y^{-s}$, the required identity is
+\[
+e\,\mathcal C_{S_N}(au^{-1}y^{-p})
+  \mathcal C_{S_N}(au^{-1})^{-1}
+  \mathcal C_{S_N}(a)=T_{p,k}.
+\]
+The three factors cost eleven primitives; the initial inversion and
+conjugation cost two. This is \texttt{complement\_steps}.
+\end{proof}
+
+\begin{lemma}[Final-parameter shear]\label{lem:c-shear}
+For $n\in\N$ and integers $a,b,c,t$,
+\[
+\sol(P(n,a,b,c))\quad\Longleftrightarrow\quad
+\sol(P(n,a,b,c-t)).
+\]
+\end{lemma}
+\begin{proof}
+Let $\phi_t(x)=xy^t$ and $\phi_t(y)=y$. Conjugating both relators gives
+\[
+y^t\phi_t(P(n,a,b,c))y^{-t}=P(n,a,b,c-t),
+\]
+where conjugation of a tuple acts on each component. Starting at the
+right-hand tuple, reverse those two conjugations, transport a solution of
+$P(n,a,b,c)$ by $\phi_t$, and correct $(xy^t,y)$ by right multiplying
+the first relator by the second to power $-t$. Reversing the shear gives
+the converse. Equivalently, the left shear $x\mapsto y^tx$ sends the
+original tuple directly to $P(n,a,b,c-t)$; the formal theorem
+\texttt{ACMillerSchupp.shear\_family} uses this convention.
+\end{proof}
+
+\paragraph{Deriving the dictionary.}
+In the even row of Section~1, set $n=2s,a=s,b=p$ in
+Lemma~\ref{lem:pinches}; in the odd row, set $n=2s+1,a=p,b=s+1$.
+Both square relators become $S_{2s+1}$ in the coordinate $u=xy^{-p}$.
+Inverting the donor $q$ and conjugating it by $x$ gives respectively
+$M_{p,s}$ and $T_{p,s+1}$ in that coordinate. Lemma~\ref{lem:mirror}
+handles the mirror; Lemma~\ref{lem:complement} exchanges $s+1$ and $s$.
+The coordinate map sends $(u,y)$ to $(xy^{-p},y)$, whose first relator
+is corrected by right multiplication by $y^p$. Finally,
+Lemma~\ref{lem:c-shear} supplies every integral $c$. Consequently the
+divisibility theorem applies to $P(2s,s,p,c)$ and $P(2s+1,p,s+1,c)$
+whenever $p,s\in\N$ and $p\mid s$ or $p\mid(s+1)$.
+
+\paragraph{An independent group calculation.}
+Every $G(p,s)$, for integral $p,s$, presents the trivial group. Indeed,
+in the presented group the second relation gives
+$y^{-p}uy^p=uy^su^{-1}$. Squaring and using the first relation gives
+\[
+u^2=y^{-p}u^2y^p=(uy^su^{-1})^2=uy^{2s}u^{-1},
+\qquad y^{2s}=u^2=y^{2s+1}.
+\]
+Thus $y=1$, and the second relation then gives $u^2=u$, so $u=1$.
+This quotient-group calculation checks the defining relations; it supplies
+no additional ordinary AC path.
+
+\subsection{The period identity and covered residues}\label{sec:period}
+\begin{lemma}[Four-factor period]\label{lem:period}
+For integers $N,p,s$, the pair $(S_N,T_{p+N,s})$ reaches
+$(S_N,T_{p,s})$ in sixteen mathematical primitives, with the square fixed.
+In particular, for $s\in\Z$, solvability of $G(p,s)$ is periodic in $p$
+with period $2s+1$.
+\end{lemma}
+\begin{proof}
+Set
+\[
+\begin{aligned}
+g_1&=y^{N+p}uy^su^{-1}y^{-N}, & g_2&=y^{N+p}uy^{s-N},\\
+g_3&=y^{N+p}uy^{-N}, & g_4&=y^p.
+\end{aligned}
+\]
+The explicit identity is
+\begin{equation}\label{eq:period}
+T_{p+N,s}\,
+\mathcal C_{S_N}(g_1)\mathcal C_{S_N}(g_2)^{-1}
+\mathcal C_{S_N}(g_3)\mathcal C_{S_N}(g_4)^{-1}=T_{p,s}.
+\end{equation}
+To derive it, first note the two-factor commutation witness, for any integer $t$:
+\[
+(y^Nu^t)\,\mathcal C_{S_N}(u^{-t}y^{-N})
+\mathcal C_{S_N}(y^{-N})^{-1}=u^ty^N.
+\]
+The first factor replaces $y^N$ by $u^2$; the second replaces that square
+back by $y^N$ after commuting it past $u^t$. Apply this with $t=1$ and
+$t=-1$ to the middle word
+\[
+y^Nu y^{-s}u^{-1}\ \Longrightarrow\
+uy^{-s}y^Nu^{-1}\ \Longrightarrow\ uy^{-s}u^{-1}y^N.
+\]
+Attach the prefix $uy^p$ and suffix $y^{-p-N}$. The product rule in
+Section~\ref{sec:witness} gives exactly $g_1,g_2,g_3,g_4$ in that order.
+Two positive and two negative factors cost $3+5+3+5=16$ primitives.
+These are the factors of \texttt{squarePeriodWitness} in
+\texttt{ACSquareDiagonalFamilies}, with $k=N-s$. Iterating the path or
+its reverse proves the periodicity assertion.
+\end{proof}
+
+\begin{corollary}[Covered residues]\label{cor:residues}
+For $s\in\N$, $G(p,s)$ is AC-trivial whenever
+\[
+p\equiv0,\ \pm1,\ \pm2,\ \pm s\pmod{2s+1}.
+\]
+\end{corollary}
+\begin{proof}
+The cases $p=1,2,s$ follow from Theorem~\ref{thm:main}; signs and periods
+follow from Lemmas~\ref{lem:mirror} and~\ref{lem:period}.
+For $p=0$, conjugate the second relator by $u^{-1}$ to obtain
+$q=uy^{-s}$. The witness $u\,\mathcal C_q(u^{-1})^{-1}=y^s$
+changes the first relator to $y^{-1}$. Invert the first relator, right
+multiply the second by the first to power $s$, and exchange the two slots
+to obtain $(u,y)$.
+\end{proof}
+
+\begin{corollary}[Heights three and four]\label{cor:heights}
+Both $G(p,3)$ and $G(p,4)$ are AC-trivial for every integer $p$.
+\end{corollary}
+\begin{proof}
+The residues $0,\pm1,\pm2,\pm3$ exhaust the classes modulo seven.
+At height four, Corollary~\ref{cor:residues} covers all classes modulo nine
+except $\pm3$. The proved seed $G(3,4)$, its sign transport and its
+periods cover those two classes.
+\end{proof}
+The seed is a finite kernel-checked certificate in \texttt{ACSquareP3Seed};
+its 65 numbered moves start at the residual root pair associated with
+$G(3,4)$, not at the square presentation itself. Its mathematical primitive
+cost is 81. Thus the height-four result retains a finite seed as well as
+the displayed uniform transports. By the dictionary, these two heights also
+give $P(6,3,b,c)$, $P(7,a,4,c)$, $P(8,4,b,c)$ and $P(9,a,5,c)$ for all
+remaining integral parameters. These are particular slices, not the full
+three-parameter families at those exponents.
 
 \subsection{What remains of exponent halving}
 Here is the precise limitation of the proposed extension. Put
@@ -521,7 +690,7 @@ Logical-dependency reports admit only the usual Lean axioms
 The conjectures are definitions of propositions and are never assumed.
 
 \paragraph{What is proved, and what is replayed.}
-The Lean development is the proof of the all-parameter statements in this
+The Lean development proves the quantified AC constructions in this
 paper. Its witness identities, entry path, arithmetic finishes and basis
 corrections together establish the main declaration above in the official
 definition of ordinary AC reachability. The theorem does not depend on a

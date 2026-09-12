@@ -18,6 +18,14 @@ entry schedule remains in the artifact. The revision also adds three
 prior-work comparisons and a construction-by-construction provenance map.
 It does not change the proved parameter range or the certificate generator.
 
+The follow-up revision makes the parameter transports explicit as lemmas:
+quotient-two pinches, mirror/sign transport, complementary heights and the
+final-parameter shear. It gives the four conjugate factors for a period,
+derives the residue corollaries, and retains the finite seed in the proof at
+height four. An elementary group calculation checks triviality of the
+presented groups without claiming additional AC paths. The entry identities
+are explicitly identified as exposition of the checked schedule.
+
 Local validation passes nine Python tests, 59 logical-dependency reports,
 three strict trust-zero checks, and 50 unlimited official replays. Of the
 50 replay cases, 48 meet the frozen golden budgets. On the six frozen

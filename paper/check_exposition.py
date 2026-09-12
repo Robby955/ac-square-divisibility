@@ -40,6 +40,12 @@ def check():
         return (mul(u(-1), y(n), X, y(-n - 1)),
                 mul(u(-1), y(a), X, y(b), u(-1), y(c)))
 
+    def relation(p, s):
+        return mul(X, y(p), X, y(-s), u(-1), y(-p))
+
+    def mirror(p, s):
+        return mul(X, y(p), X, y(-p), u(-1), y(-s))
+
     for p in range(-3, 5):
         for s in range(-3, 5):
             params = {"p": p, "s": s}
@@ -71,6 +77,18 @@ def check():
             equal("even_pinch_factor", mul(a0, conjugate(inv(z), inv(q))), z, params)
             equal("odd_pinch_factor", mul(X, y(s), u(-1), inv(q)), mul(y(-p), X), params)
 
+            coordinate = mul(X, y(-p))
+            even_donor = original(2 * s, s, p, 0)[1]
+            odd_donor = original(2 * s + 1, p, s + 1, 0)[1]
+            equal("even_dictionary_donor", mapped(mirror(p, s), coordinate, Y),
+                  conjugate(X, inv(even_donor)), params)
+            equal("odd_dictionary_donor", mapped(relation(p, s + 1), coordinate, Y),
+                  conjugate(X, inv(odd_donor)), params)
+            a = conjugate(y(-p), X)
+            b = conjugate(X, y(s))
+            equal("group_calculation_relation", mul(a, inv(b)),
+                  conjugate(y(-p), relation(p, s)), params)
+
             for t in (-2, 0, 3):
                 before = original(2 * s + 1, p, s, -1)
                 after = original(2 * s + 1, p, s, -1 - t)
@@ -91,6 +109,57 @@ def check():
             equal("second_case_companion", conjugate(y(p - 1), q),
                   mul(y(-1), u(-1), conjugate(y(p - 1), u(-d))),
                   {"p": p, "d": d})
+
+    # These are the displayed factor lists in the transport lemmas. Every
+    # factor is expanded by the ordinary-move compiler, which checks donor
+    # restoration; the endpoint and charged cost are checked separately.
+    for p in range(-2, 4):
+        for s in range(-2, 4):
+            for k in range(-2, 4):
+                n = s + k
+                square = mul(u(2), y(-n))
+                parameters = {"p": p, "s": s, "k": k}
+
+                def finish(label, compiler, factors, target, cost):
+                    for factor in factors:
+                        compiler.factor(1, factor)
+                    equal(f"{label}_endpoint", compiler.state, (square, target), parameters)
+                    equal(f"{label}_cost", compiler.proof_primitives, cost, parameters)
+
+                period_factors = (
+                    (mul(y(n + p), X, y(s), u(-1), y(-n)), True),
+                    (mul(y(n + p), X, y(s - n)), False),
+                    (mul(y(n + p), X, y(-n)), True),
+                    (y(p), False),
+                )
+                finish("period", Compiler((square, relation(p + n, s))),
+                       period_factors, relation(p, s), 16)
+
+                a = mul(y(p), X, y(-s))
+                complement_factors = ((mul(a, u(-1), y(-p)), True),
+                                      (mul(a, u(-1)), False), (a, True))
+                compiler = Compiler((square, relation(p, s)))
+                compiler.invert(1)
+                compiler.conj(1, u(-1))
+                finish("complement", compiler, complement_factors, relation(p, k), 13)
+
+                sign_factors = ((mul(y(-p), u(-1), y(s)), True),
+                                (mul(y(-p), u(-1)), False))
+                compiler = Compiler((square, mirror(p, s)))
+                compiler.conj(1, inv(mul(X, y(p))))
+                finish("sign", compiler, sign_factors, relation(-p, s), 9)
+
+                equal("mirror_square", conjugate(y(-n), inv(square)),
+                      mapped(square, u(-1), y(-1)), parameters)
+                equal("mirror_companion", conjugate(inv(mul(X, y(p), X)), inv(mirror(p, s))),
+                      mapped(relation(p, s), u(-1), y(-1)), parameters)
+
+                for t in (-2, -1, 0, 1, 2):
+                    value = mul(y(n), u(t),
+                                conjugate(mul(u(-t), y(-n)), square),
+                                conjugate(y(-n), inv(square)))
+                    equal("period_commutation", value, mul(u(t), y(n)),
+                          {**parameters, "t": t})
 
     for g in ((), X, inv(Y), mul(u(-2), y(3))):
         for positive in (False, True):
