@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "purpose": "Finite checks of manuscript transcription only",
+  "quantified_proof": "Pinned Lean development; unchanged by this revision",
+  "checks": {
+    "basic_doubling": 8,
+    "basis_correction_forward": 64,
+    "basis_correction_inverse": 64,
+    "basis_inverse_left": 128,
+    "basis_inverse_right": 128,
+    "degree_change": 40,
+    "entry_first_factor": 64,
+    "entry_second_factor": 64,
+    "even_pinch_factor": 64,
+    "factor_numbered_cost": 16,
+    "factor_primitive_cost": 16,
+    "odd_pinch_factor": 64,
+    "original_coordinate_shear": 384,
+    "second_case_companion": 40,
+    "second_case_donor": 40
+  },
+  "total": 1184
+}

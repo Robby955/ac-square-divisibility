@@ -15,6 +15,28 @@ substitution technique. The exact divisibility statement was not identified
 in those theorem statements. Unexamined coordinate equivalences could still
 relate it to a previously solved class.
 
+Alexei D. Miasnikov and Alexei G. Myasnikov,
+[*Balanced presentations of the trivial group on two generators and the Andrews–Curtis conjecture*](https://web.stevens.edu/algebraic/alexeim/Publications/AC%20Conjecture/AC12_preprint.pdf),
+Groups and Computation III, volume 23 (2001), 257–263.
+The theorem covers balanced trivial-group presentations on two generators
+with total relator length at most twelve. This is prior finite classification;
+it does not by itself identify every member of an unbounded parameter family.
+
+Alexei Lisitsa,
+[*Towards computer-assisted proofs of parametric Andrews-Curtis simplifications, II*](https://easychair.org/publications/paper/tkQS),
+LPAR 2024 Complementary Volume, Kalpa Publications in Computing 18 (2024),
+131–136, [doi:10.29007/p2w1](https://doi.org/10.29007/p2w1).
+The primary publication record reports ATP simplifications for particular
+Miller–Schupp presentations at n=3,...,8, followed by two parametric
+conjectures. It supplies prior computer-assisted certificate work and
+conjecture formation; those conjectures are not cited as general theorems.
+
+In [*The complexity of balanced presentations and the Andrews–Curtis conjecture*](https://arxiv.org/abs/1504.04187), Martin R. Bridson establishes lower bounds on the number of AC moves,
+beginning at rank four (2015). Our rank-two doubling count is the length of
+one chosen witness list, not a lower bound on any presentation's shortest trivialization.
+Exponential growth in our exporter therefore does not establish an analogue
+of Bridson's lower-bound theorem in rank two.
+
 Pavel Panteleev and Alexander Ushakov,
 [*Conjugacy search problem and the Andrews–Curtis conjecture*](https://arxiv.org/abs/1609.00325).
 Their conjugacy and substitution framework, including the treatment of

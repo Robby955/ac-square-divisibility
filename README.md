@@ -94,18 +94,33 @@ the unresolved induction interface is in [ACSquareHalving.lean](lean/ACSquareHal
 The complete dependency closure is included; sibling research folders are
 not needed.
 
+Lean proves the quantified theorem. Python is a separate executable
+implementation, and each emitted path is certified by exact official replay.
+It is not extracted from Lean; equality of the complete factor lists across
+the two implementations has not been proved. The formal theorem does not
+depend on the finite replay matrix.
+
 ## Compile the paper
 
 With a standard TeX Live installation containing the packages used in the source:
 
 ```sh
 python3 paper/generate_table.py
+python3 paper/check_exposition.py
 cd paper
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
 ```
 
-The shipped PDF was compiled and its pages were visually inspected. The
-appendix contains every macro of the integer-parameter entry route.
+The shipped PDF was compiled and its pages were visually inspected. It
+explains the entry's two donor substitutions, gives a doubling diagram, and
+derives both arithmetic finishes. The complete 51-row schedule remains in
+[entry_route.json](entry_route.json) and its generated
+[typeset listing](paper/entry-table.tex). The transcription check exercises
+the displayed identities at signed parameters; it is not a quantified proof.
+
+[REVIEW_RESPONSE.md](REVIEW_RESPONSE.md) records the response to the supplied
+manuscript review, including the forward automorphism direction and the
+distinction between construction length and shortest-path complexity.
 
 ## Repository checks and release assets
 

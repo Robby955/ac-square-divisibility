@@ -2,17 +2,19 @@
   "compiler": "texlive",
   "exit_code": 0,
   "pdf_exists": true,
-  "source_sha256": "d0d339f789e3060ba1b3a74438d5a6d963759227be573af9750866fbfbbb1ae8",
-  "pdf_sha256": "f4af32a7764a00cd1c269e521f138187061a4de498a76bb902de175b7a67cf2d",
-  "pages": 8,
+  "source_sha256": "0a1ebb560c7350505fe65917a84099c9066cf3f1acde13c4df070e3a628d0ec9",
+  "pdf_sha256": "94c2ae9ee9a61cada5681d7a20be57417721e0b7ea7f2b4281f736e20d33ba1c",
+  "pages": 10,
   "layout_warnings": [],
-  "visual_inspection": "All eight final pages inspected after authorship, contact and prose edits; no layout warnings.",
+  "visual_inspection": "All ten pages inspected; final diagram and provenance pages inspected after the last edits. No clipping, collisions or layout warnings.",
   "command": [
-    "latexmk",
+    "/opt/homebrew/bin/latexmk",
+    "-norc",
     "-pdf",
     "-interaction=nonstopmode",
     "-halt-on-error",
-    "-outdir=build",
-    "main.tex"
+    "-synctex=1",
+    "-outdir=/Users/robsneiderman/Projects/acc-square-family-publication-20260912/paper/build",
+    "/Users/robsneiderman/Projects/acc-square-family-publication-20260912/paper/main.tex"
   ]
 }

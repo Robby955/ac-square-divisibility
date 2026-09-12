@@ -29,6 +29,8 @@ jobs:
         run: python3 verify.py --lean
       - name: Replay all constructed certificates
         run: python3 experiment.py --matrix --output run/replay.json
+      - name: Check manuscript identities on signed inputs
+        run: python3 paper/check_exposition.py
       - name: Check that the paper table regenerates exactly
         run: |
           python3 paper/generate_table.py

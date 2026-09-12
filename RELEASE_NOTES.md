@@ -9,6 +9,15 @@ The release includes the PDF and LaTeX source, a pinned Lean project, the
 numbered-path constructor, unchanged official verifier sources, full replay
 receipts, prior-work comparisons, citation metadata, and file hashes.
 
+The revised manuscript explains the two entry substitutions, introduces the
+original-coordinate dictionary, and expands doubling and the degree-change
+finish. It separates factor counts, ordinary primitives, numbered moves and
+official work. Lean is explicitly the proof of the quantified theorem;
+Python exports independently replayed finite certificates. The complete
+entry schedule remains in the artifact. The revision also adds three
+prior-work comparisons and a construction-by-construction provenance map.
+It does not change the proved parameter range or the certificate generator.
+
 Local validation passes nine Python tests, 59 logical-dependency reports,
 three strict trust-zero checks, and 50 unlimited official replays. Of the
 50 replay cases, 48 meet the frozen golden budgets. On the six frozen
