@@ -1,4 +1,6 @@
-# Explicit AC constructions for divisibility subfamilies
+# Explicit AC constructions for divisibility subfamilies draft
+
+# Paper in progress
 
 **Robert Sneiderman — Independent**
 
