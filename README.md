@@ -9,14 +9,19 @@ With **GPT-6 Astra (OpenAI)**, AI research collaborator.
 Let u,y be free generators. For integers p,s, define the ordered pair of
 relator words
 
-\[
-G(p,s)=(u^2y^{-(2s+1)},\;uy^pu y^{-s}u^{-1}y^{-p})
-\]
+```math
+G(p,s)=\left(u^2y^{-(2s+1)},\;uy^puy^{-s}u^{-1}y^{-p}\right).
+```
 
 Setting both words equal to the identity gives the relations
-u² = y^(2s+1) and u y^p u = y^p u y^s. We call this the square family because
-the first relation contains u². The parameters p,s choose a member of the
-family; they are not additional generators. G denotes the specified relator
+
+```math
+u^2=y^{2s+1}\qquad\text{and}\qquad uy^pu=y^puy^s.
+```
+
+We call this the square family because the first relation contains u².
+The parameters p,s choose a member of the family; they are not additional
+generators. G denotes the specified relator
 pair on which Andrews–Curtis moves act.
 
 This note proves ordinary, fixed-rank Andrews–Curtis triviality when p and s
@@ -143,8 +148,9 @@ distinction between construction length and shortest-path complexity.
 [The verification workflow](.github/workflows/verify.yml) builds Lean, checks
 source hashes and logical dependencies, runs the Python tests, replays the
 fixed matrix, and checks regeneration of the appendix table. Action revisions
-are pinned. This configuration has been reviewed locally; its first hosted
-run is pending publication of the repository. No passing CI badge is claimed.
+are pinned. [Hosted verification of v0.1.0 passed](https://github.com/Robby955/ac-square-divisibility/actions/runs/34726565443).
+The [versioned release](https://github.com/Robby955/ac-square-divisibility/releases/tag/v0.1.0)
+preserves the submitted proof package and its full source commit.
 
 To prepare the files for a GitHub release from a clean committed version:
 
