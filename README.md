@@ -44,6 +44,8 @@ G(3,3m+1); its companion restoration remains unproved, beginning at d=2.
 The package states that restoration as a hypothesis and proves the resulting
 equivalence. It does not assume it, solve AK(3), or settle AC or Stable AC.
 
+This is ongoing research only recently started, the paper is in draft form and requires substantial revision.
+
 ## Reproduce the finite certificates
 
 Python 3.10 or later, standard library only:
