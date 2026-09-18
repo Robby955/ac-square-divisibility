@@ -35,3 +35,9 @@ jobs:
         run: |
           python3 paper/generate_table.py
           git diff --exit-code -- paper/entry-table.tex
+
+      - name: Check height-five and two-factor additions
+        run: |
+          python3 generate_release_lean.py --check
+          python3 release_additions.py --matrix --output run/additions.json
+          python3 verify_additions.py run/additions.json

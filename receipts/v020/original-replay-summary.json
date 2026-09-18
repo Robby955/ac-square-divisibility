@@ -1,0 +1,105 @@
+{
+  "claim": "Finite measurements of a proved uniform construction; no shortestness claim.",
+  "python": "3.13.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "move_spec_version": "ac-r2-v1",
+  "limits": {
+    "max_path_length": 100000,
+    "max_total_relator_length": 10000,
+    "max_work": 5000000
+  },
+  "unlimited_policy": "All three limits set to positive infinity inside the verifier.",
+  "comparisons": [
+    {
+      "p": 1,
+      "s": 1,
+      "frozen_length": 35,
+      "constructed_length": 149,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 35,
+        "peak_total_relator_length": 13,
+        "work": 363,
+        "certificate_hash": "sha256:34ec5d7796cc7e7fc841faf8bf925f5612c4c5a43c2360c44d97252627bde822"
+      }
+    },
+    {
+      "p": 1,
+      "s": 2,
+      "frozen_length": 116,
+      "constructed_length": 212,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 116,
+        "peak_total_relator_length": 25,
+        "work": 1725,
+        "certificate_hash": "sha256:0cb1964312f3f3c2120b3141e2cfa706f13a2c15f09468ae8fa9ad5833a419fe"
+      }
+    },
+    {
+      "p": 1,
+      "s": 3,
+      "frozen_length": 330,
+      "constructed_length": 377,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 330,
+        "peak_total_relator_length": 29,
+        "work": 5968,
+        "certificate_hash": "sha256:d37782f960ae79a7016015066f09ab857bbeb7a9f0c065656f9cf19b33eb2b7a"
+      }
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "frozen_length": 95,
+      "constructed_length": 227,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 95,
+        "peak_total_relator_length": 23,
+        "work": 1305,
+        "certificate_hash": "sha256:51d110097c5619a26125a596638ccfc16205b875048043bf578c087594ef9193"
+      }
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "frozen_length": 199,
+      "constructed_length": 282,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 199,
+        "peak_total_relator_length": 33,
+        "work": 3412,
+        "certificate_hash": "sha256:f824f075a2f094e1c1c4a23a9ae6cc22572a4a91f68dd7ddb6aab7f584f2ab70"
+      }
+    },
+    {
+      "p": 3,
+      "s": 3,
+      "frozen_length": 152,
+      "constructed_length": 321,
+      "frozen_official_result": {
+        "ok": true,
+        "length": 152,
+        "peak_total_relator_length": 31,
+        "work": 2635,
+        "certificate_hash": "sha256:433aa6f0e7f1406cfc5c3699066b9fe21842bb56fd878ed73c50d98c49cd4547"
+      }
+    }
+  ],
+  "summary": {
+    "cases": 50,
+    "golden_passes": 48,
+    "unlimited_passes": 50,
+    "build_seconds": 4.487393208546564,
+    "replay_seconds": 0.8548688706941903,
+    "frozen_overlaps": 6,
+    "shorter_paths_on_overlaps": 0
+  },
+  "rows_count": 50,
+  "comparisons_count": 6,
+  "complete_fresh_output": "run/rc-full/original-replay.json (local working output)",
+  "frozen_full_matrix": "receipts/replay.json"
+}

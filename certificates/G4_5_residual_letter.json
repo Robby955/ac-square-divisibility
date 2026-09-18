@@ -1,0 +1,6374 @@
+{
+  "schema": "ordinary-ac-letter-v1",
+  "input": [
+    "YYYYuuyyyyU",
+    "YYUyUU"
+  ],
+  "endpoint": [
+    "u",
+    "y"
+  ],
+  "parameters": {
+    "p": 4,
+    "r": 1,
+    "d": 2
+  },
+  "description": "Residual pair (B_p,Q_{r,d}); not the original square pair.",
+  "moves": [
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "U"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "Y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "U"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 0,
+      "letter": "u"
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "y"
+    },
+    {
+      "op": "conjugate",
+      "slot": 1,
+      "letter": "u"
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "multiply",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    },
+    {
+      "op": "invert",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "multiply",
+      "slot": 1
+    },
+    {
+      "op": "invert",
+      "slot": 0
+    }
+  ],
+  "compiler_counts": {
+    "moves": 1285,
+    "peak_total_length": 263,
+    "work_including_initial": 152018
+  },
+  "search_trace": [
+    "UUYYUy/UUyyyyuYYYY    ",
+    "UUYYUy/UUyyUYYYYuy    mult slot=1 sign=1 i=0 j=2",
+    "UUYUUyyUYYY/UUYYUy    mult slot=1 sign=0 i=0 j=3",
+    "UUYYUy/UUyuYYuuyuy    mult slot=0 sign=1 i=0 j=2",
+    "UUYYUy/UUYYuyuyUUyuY    mult slot=1 sign=0 i=5 j=0",
+    "UUYUUYuyUUyuY/UUYYUy    mult slot=1 sign=0 i=3 j=0",
+    "UUUyuYUYUYuy/UUYuYUy    auto gen=1 side=0 sign=1",
+    "UUUYUUyuYUY/UUYuYUy    mult slot=0 sign=0 i=0 j=4",
+    "UUYUUyuYY/UUYuuYUy    auto gen=1 side=0 sign=1",
+    "UUYUUyuYY/UUYYUyUYY    mult slot=1 sign=0 i=1 j=7",
+    "UUyuYuYUY/UYuYUYuYUy    auto gen=1 side=0 sign=1",
+    "UUyuYuYUY/UYUYUYuYY    mult slot=1 sign=0 i=0 j=4",
+    "UUUYuYY/UUyUyuYYuY    auto gen=0 side=0 sign=1",
+    "UUUYuYY/UUYUUYYuY    mult slot=1 sign=0 i=2 j=6",
+    "UUUYuYY/UUUyuuyuuY    mult slot=1 sign=1 i=0 j=1",
+    "UUUYuYY/UUYYUyuuY    mult slot=1 sign=0 i=2 j=5",
+    "UUUYuYY/UUYYYYUY    mult slot=1 sign=0 i=4 j=5",
+    "UUyUYYY/UYuYYUyUy    auto gen=0 side=0 sign=1",
+    "UUyUYYY/UYYUYuyy    mult slot=1 sign=1 i=0 j=4",
+    "UUYUyuY/UUyUYYY    mult slot=1 sign=1 i=0 j=4",
+    "UUUUYUYY/UUYUyuY    mult slot=1 sign=0 i=2 j=0",
+    "UUUYYuY/UYUyuY    auto gen=1 side=0 sign=1",
+    "UUYYYuy/UYUyuY    mult slot=0 sign=1 i=0 j=0",
+    "UYUyuY/UYYYYUy    mult slot=0 sign=0 i=0 j=5",
+    "UUyuY/UYYYUyy    auto gen=0 side=0 sign=1",
+    "UUYYUy/UUyuY    mult slot=1 sign=0 i=0 j=4",
+    "UUUyUYY/UUyuY    mult slot=0 sign=0 i=0 j=4",
+    "UUUUUY/UUyuY    mult slot=0 sign=0 i=3 j=0",
+    "UUUUY/UUyuY    mult slot=0 sign=1 i=0 j=0",
+    "UUUY/UUyuY    mult slot=0 sign=1 i=0 j=0",
+    "UUUY/UUY    mult slot=1 sign=1 i=0 j=0",
+    "U/UUY    mult slot=0 sign=1 i=0 j=0",
+    "U/UY    mult slot=1 sign=1 i=0 j=0",
+    "U/Y    mult slot=1 sign=1 i=0 j=0"
+  ],
+  "verification_scope": "Independent exact free reduction; not SAIR official replay or Lean.",
+  "unoptimized_compiler_counts": {
+    "moves": 1851,
+    "peak_total_length": 263,
+    "work_including_initial": 206849
+  },
+  "postprocessing": "Commuting inversion/conjugation block contraction and exact repeated-state loop erasure."
+}

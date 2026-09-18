@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the paper and identify the repository commit used."
+message: "Please cite the paper and identify the full repository commit used. This version is a review candidate."
 type: software
-title: "Explicit Andrews-Curtis constructions for divisibility subfamilies of square presentations"
-version: 0.1.0
+title: "Explicit Andrews-Curtis Constructions for Square Presentations"
+version: 0.2.0-rc1
 authors:
   - family-names: Sneiderman
     given-names: Robert
-    affiliation: Independent
+    affiliation: Independent Researcher
     email: robbysneiderman@gmail.com
 license: Apache-2.0
 keywords:
@@ -16,12 +16,12 @@ keywords:
   - explicit certificates
 preferred-citation:
   type: report
-  title: "Explicit Andrews-Curtis constructions for divisibility subfamilies of square presentations"
+  title: "Explicit Andrews-Curtis Constructions for Square Presentations"
   authors:
     - family-names: Sneiderman
       given-names: Robert
-      affiliation: Independent
+      affiliation: Independent Researcher
       email: robbysneiderman@gmail.com
   year: 2026
-  version: 0.1.0
-  notes: "GPT-6 Astra (OpenAI) is credited as an AI research collaborator; see the contribution statement."
+  version: 0.2.0-rc1
+  notes: "Research assistance and verification boundaries are disclosed in the acknowledgments and CONTRIBUTIONS.md."

@@ -1,0 +1,57 @@
+{
+  "version": "0.2.0-rc1",
+  "integration_baseline": "16fd2c61570161f5fb5856d2e1d5c7fd67ee3a34",
+  "frozen_release": "d0ed2c06bb3a9e7ed31e2f31e24d17de6323efe8",
+  "verified_at_utc": "2026-09-18T02:35:35.129132+00:00",
+  "python_tests": 21,
+  "lean_checked": true,
+  "logical_dependency_reports": 71,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "original_proof_modules_unchanged": 28,
+  "original_paths": {
+    "unlimited_passes": 50,
+    "cases": 50,
+    "resource_limit_passes": 48
+  },
+  "new_paths": {
+    "cases": 281,
+    "height5_complete": 33,
+    "residual": 1,
+    "period": 247,
+    "unlimited_passes": 281,
+    "resource_limit_passes": 281,
+    "separate_interpreter": {
+      "ok": true,
+      "certificates": 281,
+      "ordinary_moves_replayed": 82886,
+      "literal_endpoints_anchored": true,
+      "pinned_verifier_replay": true,
+      "network_submission": false
+    }
+  },
+  "paper": {
+    "pages": 23,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "source_sha256": "083b06b4018cd404aa851fdda91253a292a327880896db131e1329b0678a5bab",
+    "pdf_sha256": "68e0b16201f85cb4c6800fddd89994ee624538aead20ba8a4089bde32183cee8"
+  },
+  "formalized_additions": [
+    "height-five residual seed",
+    "all integer degrees at height five",
+    "original-coordinate exponent-ten and exponent-eleven slices",
+    "two-factor period construction and nine-primitive path"
+  ],
+  "written_not_formalized": [
+    "optimal multiplication lower bound",
+    "root-normal restoration obstruction"
+  ],
+  "hosted_ci_run": false,
+  "published": false,
+  "submitted": false,
+  "notes": "Local validation on the user Mac. Baseline and candidate share pinned dependency caches but use separate project build directories. Official replay means the unchanged pinned SAIR core, not organizer acceptance or live submission."
+}

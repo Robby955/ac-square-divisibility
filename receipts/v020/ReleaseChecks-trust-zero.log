@@ -1,0 +1,16 @@
+'AC.MillerSchupp.SquareFamily.HeightFive.seed_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.seed_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.square_four_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.square_three_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.square_five_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.complementary_six_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.exponent_ten_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.HeightFive.exponent_eleven_slice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness_length' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness_cost' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.square_period_two_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
