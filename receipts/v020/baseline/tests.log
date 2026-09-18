@@ -1,0 +1,14 @@
+test_affine_entry_arbitrary_integers (test_experiment.ProofExportTests.test_affine_entry_arbitrary_integers) ... ok
+test_all_move_ids_match_official (test_experiment.ProofExportTests.test_all_move_ids_match_official) ... ok
+test_corrupt_witness_rejected (test_experiment.ProofExportTests.test_corrupt_witness_rejected) ... ok
+test_factor_restores_donor (test_experiment.ProofExportTests.test_factor_restores_donor) ... ok
+test_input_boundaries (test_experiment.ProofExportTests.test_input_boundaries) ... ok
+test_iterated_witness_identity_and_count (test_experiment.ProofExportTests.test_iterated_witness_identity_and_count) ... ok
+test_missing_last_move_fails (test_experiment.ProofExportTests.test_missing_last_move_fails) ... ok
+test_official_pins (test_experiment.ProofExportTests.test_official_pins) ... ok
+test_paths_match_recorded_source (test_experiment.ProofExportTests.test_paths_match_recorded_source) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 3.165s
+
+OK

@@ -1,6 +1,6 @@
 name = "ac_square_family"
-version = "0.1.0"
-defaultTargets = ["PaperChecks"]
+version = "0.2.0"
+defaultTargets = ["ReleaseChecks"]
 
 [leanOptions]
 autoImplicit = false
@@ -97,3 +97,15 @@ name = "ACYInversion"
 
 [[lean_lib]]
 name = "PaperChecks"
+
+[[lean_lib]]
+name = "ACSquareHeightFiveSeed"
+
+[[lean_lib]]
+name = "ACSquareHeightFive"
+
+[[lean_lib]]
+name = "ACSquarePeriodTwo"
+
+[[lean_lib]]
+name = "ReleaseChecks"

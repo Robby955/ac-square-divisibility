@@ -1,0 +1,94 @@
+ℹ [1007/1020] Replayed ACSquareP2Checks
+info: ACSquareP2Checks.lean:41:0: 'AC.MillerSchupp.SquareFamily.P2.root' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:42:0: 'AC.MillerSchupp.SquareFamily.P2.companion' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:43:0: 'AC.MillerSchupp.SquareFamily.P2.powerRelator' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:44:0: 'AC.MillerSchupp.SquareFamily.P2.doubleWitness' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:45:0: 'AC.MillerSchupp.SquareFamily.P2.iteratedDouble' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:46:0: 'AC.MillerSchupp.SquareFamily.P2.power_finish' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:47:0: 'AC.MillerSchupp.SquareFamily.P2.multiple_root_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:48:0: 'AC.MillerSchupp.SquareFamily.P2.predecessor_multiple_root_solvable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ACSquareP2Checks.lean:49:0: 'AC.MillerSchupp.SquareFamily.P2.even_root_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:50:0: 'AC.MillerSchupp.SquareFamily.P2.odd_root_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:51:0: 'AC.MillerSchupp.SquareFamily.P2.root_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:52:0: 'AC.MillerSchupp.SquareFamily.P2.entryMap' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:53:0: 'AC.MillerSchupp.SquareFamily.P2.entryMap_x' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:54:0: 'AC.MillerSchupp.SquareFamily.P2.entryMap_y' depends on axioms: [propext, Quot.sound]
+info: ACSquareP2Checks.lean:55:0: 'AC.MillerSchupp.SquareFamily.P2.root_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:56:0: 'AC.MillerSchupp.SquareFamily.P2.entryMap_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:57:0: 'AC.MillerSchupp.SquareFamily.P2.square_of_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:58:0: 'AC.MillerSchupp.SquareFamily.P2.square_p2_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:59:0: 'AC.MillerSchupp.SquareFamily.P2.covered_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:60:0: 'AC.MillerSchupp.SquareFamily.P2.covered_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:61:0: 'AC.MillerSchupp.SquareFamily.P2.even_p2_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:62:0: 'AC.MillerSchupp.SquareFamily.P2.even_negative_p2_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:63:0: 'AC.MillerSchupp.SquareFamily.P2.odd_p2_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:64:0: 'AC.MillerSchupp.SquareFamily.P2.odd_negative_p2_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:65:0: 'AC.MillerSchupp.SquareFamily.P2.square_three_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:66:0: 'AC.MillerSchupp.SquareFamily.P2.complementary_four_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:67:0: 'AC.MillerSchupp.SquareFamily.P2.exponent_six_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:68:0: 'AC.MillerSchupp.SquareFamily.P2.exponent_seven_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:69:0: 'AC.MillerSchupp.SquareFamily.P2.multiple_square_solvable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:70:0: 'AC.MillerSchupp.SquareFamily.P2.predecessor_multiple_square_solvable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ACSquareP2Checks.lean:71:0: 'AC.MillerSchupp.SquareFamily.P2.divisibility_square_solvable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ACSquareP2Checks.lean:72:0: 'AC.MillerSchupp.SquareFamily.P2.even_divisibility_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP2Checks.lean:73:0: 'AC.MillerSchupp.SquareFamily.P2.odd_divisibility_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1011/1020] Replayed ACSquareP3Checks
+info: ACSquareP3Checks.lean:27:0: 'AC.MillerSchupp.SquareFamily.Residual.relation' depends on axioms: [propext, Quot.sound]
+info: ACSquareP3Checks.lean:28:0: 'AC.MillerSchupp.SquareFamily.Residual.reductionWitness' depends on axioms: [propext, Quot.sound]
+info: ACSquareP3Checks.lean:29:0: 'AC.MillerSchupp.SquareFamily.Residual.root_to_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:30:0: 'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap' depends on axioms: [propext, Quot.sound]
+info: ACSquareP3Checks.lean:31:0: 'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_x' depends on axioms: [propext, Quot.sound]
+info: ACSquareP3Checks.lean:32:0: 'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_y' depends on axioms: [propext, Quot.sound]
+info: ACSquareP3Checks.lean:33:0: 'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_standard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ACSquareP3Checks.lean:34:0: 'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:35:0: 'AC.MillerSchupp.SquareFamily.Residual.square_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:36:0: 'AC.MillerSchupp.SquareFamily.Residual.square_residual_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:37:0: 'AC.MillerSchupp.SquareFamily.Residual.degree_three_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:38:0: 'AC.MillerSchupp.SquareFamily.Residual.degree_three_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:39:0: 'AC.MillerSchupp.SquareFamily.Residual.seedOneMoves' does not depend on any axioms
+info: ACSquareP3Checks.lean:40:0: 'AC.MillerSchupp.SquareFamily.Residual.seed_one_cost' depends on axioms: [propext]
+info: ACSquareP3Checks.lean:41:0: 'AC.MillerSchupp.SquareFamily.Residual.seed_one_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:42:0: 'AC.MillerSchupp.SquareFamily.Residual.seed_one_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:43:0: 'AC.MillerSchupp.SquareFamily.Residual.square_three_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:44:0: 'AC.MillerSchupp.SquareFamily.Residual.square_four_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:45:0: 'AC.MillerSchupp.SquareFamily.Residual.complementary_five_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ACSquareP3Checks.lean:46:0: 'AC.MillerSchupp.SquareFamily.Residual.exponent_eight_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ACSquareP3Checks.lean:47:0: 'AC.MillerSchupp.SquareFamily.Residual.exponent_nine_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1015/1020] Replayed PaperChecks
+info: PaperChecks.lean:5:0: 'AC.MillerSchupp.SquareFamily.Residual.halve_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PaperChecks.lean:6:0: 'AC.MillerSchupp.SquareFamily.Residual.two_root_halve_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PaperChecks.lean:7:0: 'AC.MillerSchupp.SquareFamily.Residual.halvingCost_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PaperChecks.lean:8:0: 'AC.MillerSchupp.SquareFamily.Residual.degree_three_of_restoration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PaperChecks.lean:9:0: 'AC.MillerSchupp.SquareFamily.Residual.degree_three_all_iff_restoration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1019/1020] Replayed ReleaseChecks
+info: ReleaseChecks.lean:6:0: 'AC.MillerSchupp.SquareFamily.HeightFive.seed_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:7:0: 'AC.MillerSchupp.SquareFamily.HeightFive.seed_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:8:0: 'AC.MillerSchupp.SquareFamily.HeightFive.square_four_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:9:0: 'AC.MillerSchupp.SquareFamily.HeightFive.square_three_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:10:0: 'AC.MillerSchupp.SquareFamily.HeightFive.square_five_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:11:0: 'AC.MillerSchupp.SquareFamily.HeightFive.complementary_six_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ReleaseChecks.lean:12:0: 'AC.MillerSchupp.SquareFamily.HeightFive.exponent_ten_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ReleaseChecks.lean:13:0: 'AC.MillerSchupp.SquareFamily.HeightFive.exponent_eleven_slice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ReleaseChecks.lean:14:0: 'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness' depends on axioms: [propext, Quot.sound]
+info: ReleaseChecks.lean:15:0: 'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness_length' depends on axioms: [propext, Quot.sound]
+info: ReleaseChecks.lean:16:0: 'AC.MillerSchupp.SquareFamily.squarePeriodTwoWitness_cost' depends on axioms: [propext, Quot.sound]
+info: ReleaseChecks.lean:17:0: 'AC.MillerSchupp.SquareFamily.square_period_two_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1020 jobs).

@@ -1,0 +1,26 @@
+test_affine_entry_arbitrary_integers (test_experiment.ProofExportTests.test_affine_entry_arbitrary_integers) ... ok
+test_all_move_ids_match_official (test_experiment.ProofExportTests.test_all_move_ids_match_official) ... ok
+test_corrupt_witness_rejected (test_experiment.ProofExportTests.test_corrupt_witness_rejected) ... ok
+test_factor_restores_donor (test_experiment.ProofExportTests.test_factor_restores_donor) ... ok
+test_input_boundaries (test_experiment.ProofExportTests.test_input_boundaries) ... ok
+test_iterated_witness_identity_and_count (test_experiment.ProofExportTests.test_iterated_witness_identity_and_count) ... ok
+test_missing_last_move_fails (test_experiment.ProofExportTests.test_missing_last_move_fails) ... ok
+test_official_pins (test_experiment.ProofExportTests.test_official_pins) ... ok
+test_paths_match_recorded_source (test_experiment.ProofExportTests.test_paths_match_recorded_source) ... ok
+test_complete_height_five_residue_system (test_release_additions.ReleaseAdditionsTests.test_complete_height_five_residue_system) ... ok
+test_generated_lean_matches_data (test_release_additions.ReleaseAdditionsTests.test_generated_lean_matches_data) ... ok
+test_ordinary_homomorphism_transport (test_release_additions.ReleaseAdditionsTests.test_ordinary_homomorphism_transport) ... ok
+test_parameter_and_move_validation (test_release_additions.ReleaseAdditionsTests.test_parameter_and_move_validation) ... ok
+test_period_named_example (test_release_additions.ReleaseAdditionsTests.test_period_named_example) ... ok
+test_period_signed_identity_and_counts (test_release_additions.ReleaseAdditionsTests.test_period_signed_identity_and_counts) ... ok
+test_reverse_path (test_release_additions.ReleaseAdditionsTests.test_reverse_path) ... ok
+test_seed_literal_endpoint_and_counts (test_release_additions.ReleaseAdditionsTests.test_seed_literal_endpoint_and_counts) ... ok
+test_seed_mutation_fails_replay (test_release_additions.ReleaseAdditionsTests.test_seed_mutation_fails_replay) ... ok
+test_seed_parser_rejects_corrupt_fields (test_release_additions.ReleaseAdditionsTests.test_seed_parser_rejects_corrupt_fields) ... ok
+test_signed_period_lifts (test_release_additions.ReleaseAdditionsTests.test_signed_period_lifts) ... ok
+test_source_pins (test_release_additions.ReleaseAdditionsTests.test_source_pins) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 9.448s
+
+OK

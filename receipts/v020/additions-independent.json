@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "certificates": 281,
+  "ordinary_moves_replayed": 82886,
+  "literal_endpoints_anchored": true,
+  "pinned_verifier_replay": true,
+  "network_submission": false
+}

@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "proof_source_modules": 28,
+  "python_tests": 9,
+  "lean_checked": true,
+  "axiom_reports": 59,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

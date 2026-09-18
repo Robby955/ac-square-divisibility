@@ -1,0 +1,25 @@
+'AC.MillerSchupp.SquareFamily.Residual.relation' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.reductionWitness' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.root_to_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_x' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_y' depends on axioms: [propext, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_standard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.inverseEntryMap_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.square_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.square_residual_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.degree_three_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.degree_three_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.seedOneMoves' does not depend on any axioms
+'AC.MillerSchupp.SquareFamily.Residual.seed_one_cost' depends on axioms: [propext]
+'AC.MillerSchupp.SquareFamily.Residual.seed_one_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.seed_one_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.square_three_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.square_four_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.complementary_five_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.exponent_eight_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AC.MillerSchupp.SquareFamily.Residual.exponent_nine_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
